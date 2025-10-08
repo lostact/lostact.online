@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Abedi - Profile</title>
+    <meta name="description" content="Professional biography of John Doe, showcasing experience, projects, and interests.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/seasons.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="seasonal-background">
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <img id="leaf" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMTI4MC4wMDAwMDBwdCIgaGVpZ2h0PSIxMjgwLjAwMDAwMHB0IiB2aWV3Qm94PSIwIDAgMTI4MC4wMDAwMDAgMTI4MC4wMDAwMDAiCiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KPG1ldGFkYXRhPgpDcmVhdGVkIGJ5IHBvdHJhY2UgMS4xNSwgd3JpdHRlbiBieSBQZXRlciBTZWxpbmdlciAyMDAxLTIwMTcKPC9tZXRhZGF0YT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMTI4MC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9InJnYigyMjIsODgsNTEpIiBzdHJva2U9Im5vbmUiPgo8cGF0aCBkPSJNMTA0MjAgMTIwODkgYy04IC01IC0xNTAgLTUzIC0zMTUgLTEwOCAtMTMyMyAtNDM3IC0yNzAyIC0xMDY3Ci0zODE1IC0xNzQ0IC0xNTUgLTk0IC00MjcgLTI2OCAtNTI1IC0zMzUgLTQ0IC0zMSAtMTIzIC04NSAtMTc1IC0xMjEgLTE2NgotMTEzIC01MDkgLTM3MiAtNjgwIC01MTMgLTEzMTkgLTEwODAgLTIwNzIgLTIyNDQgLTIyNTQgLTM0ODAgLTEzMiAtODk1IDQzCi0xODM1IDUyMSAtMjc5MiAxNDIgLTI4NCAyNzEgLTUwNCA0NzkgLTgxOCA3OSAtMTE5IDE0NCAtMjIwIDE0NCAtMjIzIDAgLTEyCi0yMjYgLTI2MiAtMzcwIC00MDkgLTI5OSAtMzA2IC01ODAgLTUyNiAtODM1IC02NTQgLTEyNCAtNjIgLTEzNiAtNjcgLTM3NQotMTU3IC0xMDcgLTQxIC0yMTYgLTgzIC0yNDIgLTk1IC02MiAtMjcgLTk4IC03MSAtOTggLTExOCAxIC0xMDQgOTcgLTE1NSAxOTcKLTEwNCAyMSAxMSAxMjQgNTEgMjI5IDkwIDQxMiAxNTMgNjMxIDI3NiA5MzYgNTMwIDEzMyAxMTEgNDI3IDQwMCA1ODEgNTcyIDY2Cjc0IDEyNCAxMzYgMTI4IDEzOCA0IDIgMTYgLTkgMjUgLTIzIDE2IC0yNSAxOCAtMjYgMjUgLTggNyAxOSAxMCAxOSAxNzUgLTQKNjc2IC05MCAxMzYxIC0xMDkgMTkyNCAtNTIgMjAxMiAyMDIgMzM5MiAxMjg3IDQxMjAgMzIzOSA0NzQgMTI3MSA2NTkgMjk2Mwo1MzAgNDg1NSAtNTEgNzUxIC0xNDIgMTQ3MSAtMjcxIDIxNDggLTE3IDg3IC0yOCAxNjUgLTI1IDE3MiA2IDE3IC0xNCAyNSAtMzQKMTR6Ii8+CjwvZz4KPC9zdmc+Cg=="  style="display: none;" />
+    <img id="snowflake" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjxzdmcgZmlsbD0id2hpdGUiIGhlaWdodD0iODAwcHgiIHdpZHRoPSI4MDBweCIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgDQoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDc0LjU4MywzNzIuMzQybC0yMi4xNzEtMTIuOGwyMy41MzctMTAuMDU0YzQuMzMzLTEuODUsNi4zNS02Ljg2Myw0LjUtMTEuMTk2Yy0xLjg1LTQuMzQ2LTYuOTA4LTYuMzQyLTExLjItNC40OTYNCgkJCWwtMzUuMzExLDE1LjA4bC0zNS45MTQtMjAuNzM0bDU5LjE4My0yNS4yODNjNC4zMzMtMS44NSw2LjM1LTYuODYyLDQuNS0xMS4xOTZjLTEuODU4LTQuMzUtNi45MTctNi4zNDYtMTEuMi00LjQ5Ng0KCQkJbC03MC45NTYsMzAuMzA5bC0zNy4wMTctMjEuMzczbDIzLjI5LTcuNTI0YzQuNDgzLTEuNDUsNi45NDItNi4yNTgsNS40OTItMTAuNzQ2Yy0xLjQ0Mi00LjQ4My02LjIyNS02LjkzNy0xMC43NDItNS40OTYNCgkJCWwtMzcuOTYzLDEyLjI2NEwyNzMuMDczLDI1Nmw0OS4wNzctMjguMzM0bDMxLjk1LDE4LjYzOGMxLjM1LDAuNzg4LDIuODMzLDEuMTYyLDQuMjkyLDEuMTYyYzIuOTMzLDAsNS43OTItMS41MTcsNy4zNzUtNC4yMzMNCgkJCWMyLjM3NS00LjA3MSwxLTkuMjk2LTMuMDY3LTExLjY3MWwtMjMuNTI3LTEzLjcyNWw0MC4zNzktMjMuMzEzbDcwLjk1NiwzMC4zMDljMS4wOTIsMC40NjcsMi4yMjUsMC42OTIsMy4zNSwwLjY5Mg0KCQkJYzMuMzA4LDAsNi40NjctMS45NDYsNy44NS01LjE4OGMxLjg1LTQuMzMzLTAuMTY3LTkuMzQ2LTQuNS0xMS4xOTZsLTU5LjE4My0yNS4yODNsMzUuOTE0LTIwLjczNGwzNS4zMSwxNS4wOA0KCQkJYzEuMDkyLDAuNDcxLDIuMjI1LDAuNjkyLDMuMzUsMC42OTJjMy4zMDgsMCw2LjQ2Ny0xLjk0Niw3Ljg1LTUuMTg4YzEuODUtNC4zMzMtMC4xNjctOS4zNDYtNC41LTExLjE5NmwtMjMuNTM4LTEwLjA1NA0KCQkJbDIyLjE3MS0xMi44YzQuMDgzLTIuMzU4LDUuNDgzLTcuNTc1LDMuMTI1LTExLjY1OGMtMi4zNjctNC4wOTEtNy41OTItNS40NzktMTEuNjU4LTMuMTI1bC0yMi4xNzMsMTIuODAxbDMuMDY1LTI1LjQxNA0KCQkJYzAuNTU5LTQuNjc5LTIuNzc1LTguOTI5LTcuNDUtOS40OTJjLTQuNzI1LTAuNTc5LTguOTMzLDIuNzcxLTkuNSw3LjQ1bC00LjU5OCwzOC4xMjdsLTM5Ljk2MSwyMy4wNzFsOC42MzMtNzEuNjUyDQoJCQljMC41NTgtNC42NzktMi43NzUtOC45MjktNy40NTgtOS40OTJjLTQuNjI1LTAuNTM4LTguOTI1LDIuNzcxLTkuNDkyLDcuNDVMMzY2Ljk1LDE4Mi4wOWwtMjkuNzE5LDE3LjE1OWwzLjkxLTE4LjI2Mg0KCQkJYzAuOTkyLTQuNjA4LTEuOTQyLTkuMTQ2LTYuNTUtMTAuMTMzYy00LjY0Mi0wLjk5Ni05LjE1LDEuOTU0LTEwLjEzMyw2LjU1OWwtNi42NDgsMzMuMzM0bC01Mi4yODgsMzAuNDc0di00OS4yMjVsMzAuMjIxLTIzLjAzNw0KCQkJYzMuNzc1LTIuODI1LDQuMjk2LTguMTc1LDEuNDYzLTExLjk0NmMtMi44MzMtMy43NjctNy44MDQtNC41NS0xMS41NzEtMS43MDRsLTIwLjExMiwxNS4zNTl2LTM4LjQwNWw2NC4zNTQtNDguNjM3DQoJCQljMy43NzUtMi44MjUsNC4yOTYtOC4xNzUsMS40NjMtMTEuOTQ2Yy0yLjgyNS0zLjc3MS03LjgwNC00LjU0Ni0xMS41NzEtMS43MDRsLTU0LjI0Niw0MC45NTlWNTUuNDYzbDMwLjIyMS0yMy4wMzcNCgkJCWMzLjc3NS0yLjgyNSw0LjI5Ni04LjE3NSwxLjQ2My0xMS45NDZjLTIuODMzLTMuNzYzLTcuODA0LTQuNTQyLTExLjU3MS0xLjcwNGwtMjAuMTEyLDE1LjM1OVY4LjUzMw0KCQkJYzAtNC43MTItMy44MTctOC41MzMtOC41MzMtOC41MzNjLTQuNzE3LDAtOC41MzMsMy44MjEtOC41MzMsOC41MzN2MjUuNjAxbC0yMC45NzktMTUuMzU5Yy0zLjc2Ny0yLjgyOS05LjM2My0yLjA1NC0xMi4xODgsMS43MDQNCgkJCWMtMi44MzMsMy43NzEtMS42OTYsOS4xMjEsMi4wNzksMTEuOTQ2bDMxLjA4OCwyMy4wMzd2NTUuNDcybC01NS4xMTMtNDAuOTU5Yy0zLjc1OC0yLjgzMy05LjM2My0yLjA1OC0xMi4xODgsMS43MDQNCgkJCWMtMi44MzMsMy43NzEtMS42OTYsOS4xMjEsMi4wNzksMTEuOTQ2bDY1LjIyMSw0OC42Mzd2MzguNDA1bC0yMC45NzktMTUuMzU5Yy0zLjc2Ny0yLjgzMy05LjM2My0yLjA1OC0xMi4xODgsMS43MDQNCgkJCWMtMi44MzMsMy43NzEtMS42OTYsOS4xMjEsMi4wNzksMTEuOTQ2bDMxLjA4OCwyMy4wMzd2NDkuMjJsLTQzLjU0LTI0Ljg1MmwtOC41OTQtMzguOTUxYy0wLjk5Mi00LjYxMy01LjYwOC03LjU3OS0xMC4yNTgtNi41NTkNCgkJCWMtNC42MDgsMC45ODgtNy42MDIsNS41MjUtNi42MSwxMC4xMzNsNS4wODEsMjMuODc3bC00MS4yNTItMjMuODA3bC05LjUzMy03OS4wNjZjLTAuNTY3LTQuNjc5LTQuODYzLTcuOTc1LTkuNDk2LTcuNDUNCgkJCWMtNC42ODMsMC41NjItOC4wMTksNC44MTItNy40Niw5LjQ5Mmw3Ljk5NCw2Ni4zNTNsLTM4LjE4MS0yMi4wNDRsLTQuNTk4LTM4LjEyMmMtMC41NjctNC42NzktNC43OTItOC4wMTctOS41LTcuNDUNCgkJCWMtNC42NzUsMC41NjItOC4wMDgsNC44MTItNy40NSw5LjQ5MmwzLjA2NSwyNS40MDlsLTIyLjE2NS0xMi43OTdjLTQuMDc1LTIuMzU0LTkuMy0wLjk2Ny0xMS42NTgsMy4xMjUNCgkJCWMtMi4zNTgsNC4wODMtMC45NTgsOS4zLDMuMTI1LDExLjY1OGwyMi4xNjcsMTIuNzk4TDM2LjA1LDE2Mi41MTNjLTQuMzMzLDEuODUtNi4zNSw2Ljg2My00LjUsMTEuMTk2DQoJCQljMS4zODMsMy4yNDIsNC41NDIsNS4xODgsNy44NSw1LjE4OGMxLjEyNSwwLDIuMjU4LTAuMjI1LDMuMzUtMC42OTJsMzUuMzE1LTE1LjA4MWwzOS42NzUsMjIuOTA1bC02NC4wOSwyNy4zOA0KCQkJYy00LjMzMywxLjg1LTYuMzUsNi44NjItNC41LDExLjE5NmMxLjM4MywzLjI0Miw0LjU0Miw1LjE4OCw3Ljg1LDUuMTg4YzEuMTI1LDAsMi4yNTgtMC4yMjUsMy4zNS0wLjY5Mmw3NS44NjUtMzIuNDA1DQoJCQlsNDAuOTA2LDIzLjYxN2wtMTkuMjg3LDExLjI1MWMtNC4wNjcsMi4zNzUtNS40NDIsNy42LTMuMDY3LDExLjY3MWMxLjU4MywyLjcxNyw0LjQ0Miw0LjIzMyw3LjM3NSw0LjIzMw0KCQkJYzEuNDU4LDAsMi45NDItMC4zNzUsNC4yOTItMS4xNjJsMjcuNzA4LTE2LjE2NEwyMzguOTM1LDI1NmwtMzcuMzA4LDIxLjUzOWMtMC43MTMtMC41MTgtMS41MTQtMC45MzItMi4zODUtMS4yMTNsLTM4Ljc1LTEyLjUyMQ0KCQkJYy00LjUwOC0xLjQzMy05LjI5MiwxLjAxMy0xMC43NDIsNS40OTZjLTEuNDUsNC40ODcsMS4wMDgsOS4yOTYsNS40OTIsMTAuNzQ2bDI2Ljk1Niw4LjcxMWwtNDIuMzU0LDI0LjQ1M2wtNzAuOTYtMzAuMzENCgkJCWMtNC4zLTEuODQyLTkuMzQyLDAuMTU0LTExLjIsNC40OTZjLTEuODUsNC4zMzMsMC4xNjcsOS4zNDYsNC41LDExLjE5Nmw1OS4xODUsMjUuMjg0bC00My4zMDQsMjUuMDAyTDQyLjc1LDMzMy43OTYNCgkJCWMtNC4zLTEuODU0LTkuMzUsMC4xNS0xMS4yLDQuNDk2Yy0xLjg1LDQuMzMzLDAuMTY3LDkuMzQ2LDQuNSwxMS4xOTZsMjMuNTQyLDEwLjA1NmwtMjIuMTY3LDEyLjc5OA0KCQkJQzMzLjM0MiwzNzQuNywzMS45NDIsMzc5LjkxNywzNC4zLDM4NGMxLjU4MywyLjczOCw0LjQ1LDQuMjY3LDcuNCw0LjI2N2MxLjQ1LDAsMi45MTctMC4zNjYsNC4yNTgtMS4xNDJsMjIuMTY1LTEyLjc5Nw0KCQkJbC0zLjA2NSwyNS40MDljLTAuNTU4LDQuNjc5LDIuNzc1LDguOTI5LDcuNDUsOS40OTJjMC4zNSwwLjA0MiwwLjY5MiwwLjA2MywxLjAzMywwLjA2M2M0LjI1OCwwLDcuOTQyLTMuMTc5LDguNDY3LTcuNTEzDQoJCQlsNC41OTgtMzguMTIybDQ3LjM1LTI3LjMzOGwtOC42MzEsNzEuNjQ4Yy0wLjU1OCw0LjY3OSwyLjc3NSw4LjkyOSw3LjQ1OCw5LjQ5MmMwLjM0MiwwLjA0MiwwLjY4MywwLjA2MywxLjAyNSwwLjA2Mw0KCQkJYzQuMjU4LDAsNy45NDItMy4xNzksOC40NjctNy41MTJsMTAuMTY1LTg0LjM2MWwzNS43MzctMjAuNjMybDAuMDksMTkuMDgzYzAuMDI1LDQuNjk2LDMuODQyLDguNTksOC41MzMsOC41OQ0KCQkJYzAuMDA4LDAsMC4wMjUsMCwwLjA0MiwwYzQuNzA4LDAsOC41MTctMy45NTYsOC40OTItOC42NjlsMC4zNjEtMjguNzgzbDQyLjc2Mi0yNC40NTJ2NTcuNzUzbC0zMS4yMTMsMjMuMDM3DQoJCQljLTMuNzc1LDIuODI1LTQuNzg3LDguMTc1LTEuOTU0LDExLjk0NmMyLjgxNywzLjc2Myw4LjUzOCw0LjUzOCwxMi4zMTMsMS43MDRsMjAuODU0LTE1LjM1OXYzOC40MDVsLTY1LjM0Niw0OC42MzcNCgkJCWMtMy43NzUsMi44MjUtNC43ODcsOC4xNzUtMS45NTQsMTEuOTQ2YzIuODI1LDMuNzYzLDguNTQ2LDQuNTMzLDEyLjMxMywxLjcwNGw1NC45ODctNDAuOTU5djQ2LjkzOGwtMzEuMjEzLDIzLjAzNw0KCQkJYy0zLjc3NSwyLjgyNS00Ljc4Nyw4LjE3NS0xLjk1NCwxMS45NDZjMi44MTcsMy43NjMsOC41MzgsNC41MzMsMTIuMzEzLDEuNzA0bDIwLjg1NC0xNS4zNTl2MjUuNjAxDQoJCQljMCw0LjcxMywzLjgxNyw4LjUzMyw4LjUzMyw4LjUzM2M0LjcxNywwLDguNTMzLTMuODIxLDguNTMzLTguNTMzdi0yNS42MDFsMTkuOTg3LDE1LjM1OWMxLjUzMywxLjE1NCwzLjA3OSwxLjcwOCw0Ljg2MiwxLjcwOA0KCQkJYzIuNiwwLDUuMDMzLTEuMTc5LDYuNzA4LTMuNDEyYzIuODMzLTMuNzcxLDIuNS05LjEyMS0xLjI3NS0xMS45NDZsLTMwLjI4My0yMy4wMzd2LTQ2LjkzOGw1NC4xMjEsNDAuOTU5DQoJCQljMS41MzMsMS4xNTQsMy4wNzksMS43MDgsNC44NjIsMS43MDhjMi42LDAsNS4wMzMtMS4xNzksNi43MDgtMy40MTJjMi44MzMtMy43NzEsMi41LTkuMTIxLTEuMjc1LTExLjk0NmwtNjQuNDE3LTQ4LjYzN3YtMzguNDA1DQoJCQlsMTkuOTg3LDE1LjM1OWMxLjUzMywxLjE1NCwzLjA3OSwxLjcwOCw0Ljg2MiwxLjcwOGMyLjYsMCw1LjAzMy0xLjE3OSw2LjcwOC0zLjQxMmMyLjgzMy0zLjc3MSwyLjUtOS4xMjEtMS4yNzUtMTEuOTQ2DQoJCQlsLTMwLjI4My0yMy4wMzd2LTU3Ljc1OGw1MC44NDYsMjkuNjQzbC0wLjM4OCwzMi4xMzFjLTAuMDE3LDQuNzEzLDMuNTM2LDguNjY5LDguMjQ0LDguNjY5YzAuMDE3LDAsMC4wMzMsMCwwLjA0MiwwDQoJCQljNC42OTIsMCw4LjUwOC0zLjg5NCw4LjUzMy04LjU5NWwwLjEtMjIuMzI3bDM0LjA1LDE5LjYzNGwxMC4xNjcsODQuMzUzYzAuNTI1LDQuMzMzLDQuMjA4LDcuNTA2LDguNDY3LDcuNTA2DQoJCQljMC4zNDIsMCwwLjY4My0wLjAyNCwxLjAyNS0wLjA2NmM0LjY4My0wLjU2Myw4LjAxNy00LjgxNSw3LjQ1OC05LjQ5NGwtOC42MzMtNzEuNjUybDM5Ljk2MSwyMy4wN2w0LjU5OCwzOC4xMjcNCgkJCWMwLjUyNSw0LjMzMyw0LjIwOCw3LjUxMyw4LjQ2Nyw3LjUxM2MwLjM0MiwwLDAuNjgzLTAuMDIxLDEuMDMzLTAuMDYzYzQuNjc1LTAuNTYzLDguMDA4LTQuODEyLDcuNDUtOS40OTJsLTMuMDY1LTI1LjQxNA0KCQkJbDIyLjE3MywxMi44MDFjMS4zNDIsMC43NzUsMi44MDgsMS4xNDIsNC4yNTgsMS4xNDJjMi45NSwwLDUuODE3LTEuNTI5LDcuNC00LjI2N0M0ODAuMDY3LDM3OS45MTcsNDc4LjY2NywzNzQuNyw0NzQuNTgzLDM3Mi4zNDINCgkJCXoiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4="  style="display: none;" />
+
+    <nav id="main-nav">
+        <div id="nav-menu" class="nav-menu">
+            <a href="#hero">Home</a>
+            <a href="#personal-info">About Me</a>
+            <a href="#about">My Story</a>
+            <a href="#experience">Career & Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Mohammad Abedi</h1>
+                <p class="tagline">Full-Stack Developer & Creative Thinker</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">Get In Touch</a>
+                    <a href="#projects" class="btn secondary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal-info">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="info-cards">
+                    <div class="card">
+                        <h3>Age</h3>
+                        <p>27</p>
+                    </div>
+                    <div class="card">
+                        <h3>Location</h3>
+                        <p>Tehran, Iran</p>
+                    </div>
+                    <div class="card">
+                        <h3>Job</h3>
+                        <p>DevOps Engineer</p>
+                    </div>
+                    <div class="card">
+                        <h3>Education</h3>
+                        <p>Bachelor's in Software Engineering</p>
+                    </div>
+                    <div class="card">
+                        <h3>Experience</h3>
+                        <p>5+ years in web development</p>
+                    </div>
+                    <div class="card">
+                        <h3>Language</h3>
+                        <p>Persian, English</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>My Story</h2>
+                <div class="story-card">
+                    <p>My journey into tech began in college, when I stumbled upon programming and instantly got hooked. There was something deeply satisfying about turning an idea into reality through code, and that feeling never left. I like to keep my code simple, meaningful, and efficient.</p>
+                    <p>When I'm not coding, you’ll probably find me playing strategy games or watching movies. I love psychological thrillers, historical films, and dark comedies. Music also holds a special place in my life, I listen to a wide range of genres, but alternative rock and heavy metal are the ones that resonate with me the most.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2>Career & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Software Engineer (DevOps)</h3>
+                        <p class="company"><a href="https://www.sigma.ir/" target="_blank">Sigma ITID</a></p>
+                        <p class="period">2025 - Present</p>
+                        <p>Working on security and monitoring of linux systems.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Founder & Developer</h3>
+                        <p class="company"><a href="https://steamdl.ir/" target="_blank">SteamDL.ir</a></p>
+                        <p class="period">2024 - Present</p>
+                        <p>Founded and developed a comprehensive platform for steam game downloads and distribution.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Co-founder & Developer</h3>
+                        <p class="company"><a href="https://modsclub.ir/" target="_blank">ModsClub.ir</a></p>
+                        <p class="period">2023 - Present</p>
+                        <p>Co-founded and developed an e-commerce platform specializing in game modifications and digital content.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Co-founder & Developer</h3>
+                        <p class="company"><a href="https://steamclub.ir/" target="_blank">SteamClub.ir</a></p>
+                        <p class="period">2022 - Present</p>
+                        <p>Co-founded and developed a specialized e-commerce platform for Steam games, handling full-stack development and business operations.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Bachelor's in Software Engineering</h3>
+                        <p class="period">2016 - 2020</p>
+                        <p>Studied software engineering principles, programming, and system design fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>SteamClub.ir</h3>
+                        <p>A specialized e-commerce platform for Steam games.</p>
+                        <div class="project-links">
+                            <a href="https://steamclub.ir/" target="_blank" class="btn small primary">View Site</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>ModsClub.ir</h3>
+                        <p>A subscription-based hub for downloading game mods.</p>
+                        <div class="project-links">
+                            <a href="https://modsclub.ir/" target="_blank" class="btn small primary">View Site</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>SteamDL.ir</h3>
+                        <p>A platform for game downloads cost saving and speed improvement.</p>
+                        <div class="project-links">
+                            <a href="https://steamdl.ir/" target="_blank" class="btn small primary">View Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests">
+            <div class="container">
+                <h2>Interests</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <h3>Favorite Movies</h3>
+                        <ul>
+                            <li>The Seventh Seal</li>
+                            <li>Ikiru</li>
+                            <li>Grave of the Fireflies</li>
+                            <li>Monty Python and the Holy Grail</li>
+                            <li>Decision to Leave</li>
+                            <li>The Last Samurai</li>
+                        </ul>
+                    </div>
+                    <div class="interest-item">
+                        <h3>Favorite Bands</h3>
+                        <ul>
+                            <li></li>
+                            <li>Coldplay</li>
+                            <li>System of a Down</li>
+                            <li>Muse</li>
+                            <li>A Perfect Circle</li>
+                            <li>Radiohead</li>
+                            <li>Linkin Park</li>
+                        </ul>
+                    </div>
+                    <div class="interest-item">
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>Football</li>
+                            <li>Video Games</li>
+                            <li>Movies/Series</li>
+                            <li>Podcasts</li>
+                            <li>Coding</li>
+                            <li>Theater</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-card">
+                    Feel free to message me your ideas or questions but please don't ask to ask.
+                    <div class="social-links">
+                        <a href="mailto:lostact@gmail.com" aria-label="Email" class="social-btn">✉️ Email</a>
+                        <a href="https://github.com/lostact" aria-label="GitHub" class="social-btn">🐙 GitHub</a>
+                        <a href="https://t.me/lostact" aria-label="Telegram" class="social-btn">📱 Telegram</a>
+                        <a href="https://steamcommunity.com/profiles/76561198370845892" aria-label="Steam" class="social-btn">🎮 Steam</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Fixed Seasonal Wheel Button -->
+        <button id="wheel-of-time-btn" class="seasonal-wheel-btn" title="Turn the Wheel of Time">
+            <div class="wheel-icon">
+                <img src="seasons-icon.png" alt="Seasons Wheel" class="seasons-icon">
+            </div>
+        </button>
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/seasons.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

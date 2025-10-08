@@ -1,0 +1,116 @@
+/* Responsive Design */
+
+/* Mobile First - Base styles are for mobile */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        padding: 0 3rem;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+    }
+
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .info-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+/* Hide Navigation completely on Mobile */
+@media (max-width: 767px) {
+    #main-nav {
+        display: none;
+    }
+
+    #content {
+        padding-top: 0; /* Remove padding since no fixed nav */
+    }
+}
+
+/* Touch-friendly buttons on mobile */
+@media (max-width: 767px) {
+    .btn {
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .timeline::before {
+        left: -15px;
+    }
+    
+    .interests-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Fluid typography */
+@media (max-width: 575px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Adjust hero height on mobile */
+@media (max-width: 767px) {
+    #hero {
+        height: 100vh;
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+}
+
+/* Stack project links on mobile */
+@media (max-width: 575px) {
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .project-links .btn {
+        display: inline-block;
+        width: auto;
+        max-width: 200px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .tech-stack {
+        justify-content: center;
+    }
+}

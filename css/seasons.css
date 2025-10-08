@@ -1,0 +1,61 @@
+/* Seasonal Color Themes */
+
+/* Autumn */
+[data-season="autumn"] {
+    --color-bg-primary: #E6D5C3;
+    --color-text-primary: #2D1810;
+    --color-accent: #B8631A;
+    --color-accent-hover: #9A4F14;
+    --color-card-bg: #F2E8DC;
+    --color-shadow: rgba(45, 24, 16, 0.15);
+    --color-border: #C8956D;
+}
+
+/* Winter */
+[data-season="winter"] {
+    --color-bg-primary: #2C3E50;
+    --color-text-primary: #ECF0F1;
+    --color-accent: #3498DB;
+    --color-accent-hover: #2980B9;
+    --color-card-bg: #34495E;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-border: #34495E;
+}
+
+/* Spring */
+[data-season="spring"] {
+    --color-bg-primary: #E3F2FD;
+    --color-text-primary: #0D47A1;
+    --color-accent: #42A5F5;
+    --color-accent-hover: #1E88E5;
+    --color-card-bg: #F3F9FF;
+    --color-shadow: rgba(13, 71, 161, 0.1);
+    --color-border: #90CAF9;
+}
+
+/* Summer */
+[data-season="summer"] {
+    --color-bg-primary: #FFF8E1;
+    --color-text-primary: #2E2E2E;
+    --color-accent: #FF8F00;
+    --color-accent-hover: #E65100;
+    --color-card-bg: #FFFBF0;
+    --color-shadow: rgba(46, 46, 46, 0.15);
+    --color-border: #FFB74D;
+}
+
+/* Seasonal Transitions */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.card,
+.timeline-item,
+.project-card,
+.interest-item {
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
