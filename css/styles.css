@@ -463,10 +463,8 @@ section h2 {
 
 /* Contact */
 #contact {
-    min-height: 400px; /* Increased height */
     display: flex;
     align-items: center;
-    padding-bottom: 25rem;
 }
 
 #contact .container {
@@ -475,13 +473,13 @@ section h2 {
 
 .contact-card {
     background-color: var(--color-card-bg);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px var(--color-shadow);
     position: relative;
     z-index: 10;
     text-align: center;
-    max-width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
 }
 
@@ -516,44 +514,46 @@ section h2 {
     resize: vertical;
 }
 
-.social-links {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2rem; /* Added spacing */
+.contact-message {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
 }
 
-.social-links a {
-    display: inline-block;
+.social-links {
+    list-style: none;
+    max-width: 320px;
+    margin: 2rem auto 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links li {
     margin: 0;
-    color: var(--color-accent);
+}
+
+.social-links .social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 1.05rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
 }
 
-.social-links a:hover {
-    color: var(--color-accent-hover);
-}
-
-.social-btn {
-    padding: 1rem 2rem !important; /* Increased padding */
-    border: 2px solid var(--color-accent) !important;
-    border-radius: 8px !important;
-    background-color: transparent !important;
-    transition: all 0.3s ease !important;
-    min-width: 150px; /* Increased width */
-    text-align: center;
-    font-size: 1.1rem; /* Slightly larger font */
-}
-
-.social-btn:hover {
-    background-color: var(--color-accent) !important;
-    color: white !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px var(--color-shadow);
+.social-links .social-btn:hover {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+    transform: translateX(6px);
+    box-shadow: 0 4px 12px var(--color-shadow);
 }
 
 /* Fixed Seasonal Wheel Button */
